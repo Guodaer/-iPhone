@@ -23,7 +23,7 @@ static BOOL isLightOn = NO;
     // Do any additional setup after loading the view, typically from a nib.
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if (![device hasTorch]) {
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"闪光灯" message:@"你有闪光灯吗亲" delegate:self cancelButtonTitle:@"好吧" otherButtonTitles:nil];
+        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"警告" message:@"你有闪光灯吗亲" delegate:self cancelButtonTitle:@"好吧" otherButtonTitles:nil];
         [alert show];
     }
     
